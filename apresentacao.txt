@@ -1,0 +1,81 @@
+Doce Git
+↳ por Gabriel G. de Brito
+= Universidade Federal do Paraná =
+
+Git é um sistema de versionamento distribuído
+criado para as necessidades do kernel Linux.
+Atualmente é o padrão de facto para versionamento
+de código. Estima-se que seja utilizado por mais
+de 90% dos desenvolvedores [Stack Overflow, 2022].
+
+O git é organizado por meio de diffs. Ou seja,
+o histórico é guardado se guardando as alterações
+feitas em dado momento. As alterações estão
+organizadas em um grafo semelhante à uma merkle tree.
+
+`git status`
+
+@git-tree.png
+
+`git log --graph --oneline --all`
+
+Vamos focar no workflow
+em time com git/GitHub.
+
+A ação mais comum vai ser invariavelmente...
+`git add .`
+`git commit`
+`git push`
+
+Podemos pensar em repositórios remotos
+como outras branches, da qual fazemos
+merge e (possivelmente) rebase.
+
+Assim, um workflow comum seria cada
+desenvolvedor ter um `fork` do repositório
+principal. Que opera como se fosse uma
+branch.
+
+Dessa maneira, cada um tem a liberdade de
+manipular o histórico como quiser antes
+de mergear no principal. Além disso,
+podemos usar ferramentas de PR do GitHub.
+
+`git branch <nova branch>`
+`git branch -D <branch>`
+`git checkout <branch>`
+\
+OBS: checkout funciona para commits
+também!
+
+Como trabalhamos em máquinas locais e
+mandamos o código para o GitHub, efetivamente
+cada um tem duas branches: o fork no GitHub
+e a cópia local.
+
+Em comandos que operam em branches remotas
+podemos usar `--set-upstream` para configurar
+uma branch padrão.
+
+Ex: `git push --set-upstream origin master`
+fará com que rodar somente `git push` seja
+equivalente à `git push origin master`.
+
+Lidando com branches, precisamos
+entender merging e rebasing. Pull
+é equivalente a `git fetch` seguido
+de merge ou rebase.
+
+@git-rebase.png
+
+@git-merge.png
+
+Tarefa: gerar chave ssh
+e configurar no GitHub.
+
+Tarefa: criar fork do repositório
+"gboncoffee/doce-git".
+
+Tarefa: clonar seu fork, adicionar seu
+nome e o seu doce preferido, e mandar
+uma PR para o "upstream".
