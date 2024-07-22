@@ -70,6 +70,18 @@ de merge ou rebase.
 
 @git-merge.png
 
+Trabalhamos em repositórios
+remotos via SSH ou HTTP.
+SSH geralmente é preferido.
+
+`ssh-keygen -t ed25519 -C "user@mail.com"`
+\
+Aceite as opções padrão.
+
+Encontre nas configurações do GitHub
+a área para adicionar novas chaves.
+Cole o conteúdo da chave.
+
 Tarefa: gerar chave ssh
 e configurar no GitHub.
 
