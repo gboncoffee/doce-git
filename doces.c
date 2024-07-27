@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Número de pessoas.
 #define DOCES 1
 
 static const char *doces[DOCES][2] = {{"Gabriel", "Sonho de Goiabada"}};
