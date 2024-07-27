@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//
+// Comentário útil.
 // Número de pessoas.
 #define DOCES 1
 
