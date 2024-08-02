@@ -3,9 +3,11 @@
 //
 // Comentário útil.
 // Número de pessoas.
-#define DOCES 2
+#define DOCES 3
 
-static const char *doces[DOCES][2] = {{"Fernando", "Chocolate"}, {"Gabriel", "Sonho de Goiabada"}};
+static const char *doces[DOCES][2] = {{"Gabriel", "Sonho de Goiabada"},
+                                      {"Fernando", "Chocolate"},
+                                      {"Andre", "Almoço do RU"}};
 
 int main(void) {
   for (int i = 0; i < DOCES; i++)
