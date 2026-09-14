@@ -8,7 +8,8 @@
 static const char *doces[DOCES][2] = {{"Gabriel", "Sonho de Goiabada"},
                                       {"Fernando", "Chocolate"},
                                       {"Andre", "Almoço do RU"},
-                                      {"Vinicius", "Strogonoff"}};
+                                      {"Vinicius", "Strogonoff"}
+				      {"BrunoY", "Sorvete"}};
 
 int main(void) {
   for (int i = 0; i < DOCES; i++)
